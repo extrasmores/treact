@@ -22,6 +22,12 @@ img {
     overflow: clip;
 }
 
+footer {
+    background-color: rgb(100 21 255);
+    margin-top: 120px;
+    padding: 90px 0;
+}
+
 .row {
     width: 100%;
     max-width: 1200px;
@@ -130,6 +136,13 @@ a:hover {
     border-radius: 50px;
     margin-left: 0;
     text-decoration: none;
+}
+
+.nav__link--primary:hover,
+.header__input--button:hover,
+.section__btn:hover {
+    cursor: pointer;
+    filter: brightness(85%);
 }
 
 /* HEADER  */
@@ -521,4 +534,104 @@ margin: 16px;
 .plan__btn--blue {
     background: white;
     color: rgb(100 21 255);
+}
+
+
+.plan__btn:hover {
+    transform: translate(1px, -1px);
+    cursor: pointer;
+    filter: brightness(85%);
+    box-shadow: -4px 1px 2px 0px;
+}
+
+/* FOOTER  */
+
+
+
+.footer__links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__links {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 64px;
+    border-bottom: 2px solid rgb(116 44 255);
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer__title {
+font-weight: 700;
+color: white;
+font-size: 16px;
+margin-bottom: 16px;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 12px 0;
+    border-bottom: 2px solid;
+    padding-bottom: 4px;
+    width: max-content;
+    border-color: transparent;
+    transition: border-color 300ms ease;
+
+}
+
+.logo {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo__img {
+    width: 40px;
+    margin-right: 12px;
+}
+
+.logo__text--footer {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    transition: color 300ms ease;
+}
+
+.footer__copyright {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 48px;
+}
+
+.footer__copyright--para {
+    color: #CBD5E0;
+    text-align: center;
+}
+
+.footer__social--link {
+    text-decoration: none;
+}
+
+.fab {
+    background-color: white;
+    padding: 12px;
+    border-radius: 9999px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 12px;
+    color: black;
+    transition: opacity 300ms ease;
+}
+
+.fab:hover {
+    opacity: 0.8;
 }
