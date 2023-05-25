@@ -13,9 +13,13 @@ body{
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    line-height: 1.6em;
     margin: 0;
 
+}
+
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
 }
 
 .row {
@@ -25,6 +29,10 @@ body{
     padding: 24px;
 }
 
+
+.container {
+    padding: 80px 0;
+}
 
 
 
@@ -124,12 +132,15 @@ a:hover {
     text-decoration: none;
 }
 
+/* HEADER  */
+
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 64px;
     width: 100%;
+
 }
 
 .purple {
@@ -145,7 +156,8 @@ header {
 }
 
 .header__right {
-    width: 60%;
+    width: 55%;
+    margin-top: 36px;
 }
 
 .header__img {
@@ -154,6 +166,7 @@ header {
 
 .header__title {
     font-size: 48px;
+    color: #1a202c;
 }
 
 
@@ -212,3 +225,300 @@ header {
     opacity: 0.5;
 }
 
+/* FEATURES  */
+
+
+.features__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section__title {
+    color: rgb(100 21 255);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+}
+
+.section__subtitle {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 0.025em;
+    color: #243E63;
+    margin: 32px 0;
+}
+
+.section__para {
+    color: #7C8BA1;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 36rem;
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.625;
+}
+
+.section__btn {
+    margin-top: 32px;
+    background-color: rgb(100 21 255);
+    border: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+
+}
+
+.services {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;
+}
+
+.service {
+    width: calc(100% / 3);
+    display: flex;
+    padding: 0 24px;
+    margin: 32px 0;
+}
+
+.row__features {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    max-width: 1024px;
+    flex-flow: column wrap;
+}
+
+.services__description {
+ margin-left: 16px;
+ margin-top: 8px;
+}
+
+.service__title {
+    font-size: 24px;
+    color: #243E63;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.025em;
+}
+
+.service__para {
+    margin-top: 16px;
+    color: rgb(124, 139, 161);
+    line-height: 2;
+    font-weight: 500;
+}
+
+.service__img {
+    border: 1px solid rgb(226, 232, 240);
+    padding: 20px;
+    border-radius: 9999px;
+}
+
+.service__img--container {
+    flex-shrink: 0;
+    border-radius: 9999px;
+    border-width: 1px;
+    padding: 1.25rem;
+    text-align: center;
+}
+
+/* QUALITY  */
+
+#quality .section__para {
+    text-align: left;
+}
+
+.row__quality {
+    display: flex;
+}
+
+.quality__description {
+    width: 50%;
+}
+
+.quality__img--container {
+    width: 50%;
+    border: 1px solid rgba(124, 139, 161, 0.2);
+    border-radius: 4px;
+    display: flex;
+    overflow: hidden;
+}
+
+.quality__img {
+    width: 100%;
+}
+
+
+/* STEPS  */
+
+.row__steps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps__img--container {
+    width: 50%;
+
+}
+
+.steps__description {
+    width: 50%;
+    margin-left: 80px
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.step__number {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: rgb(203, 213, 224);
+    line-height: 1;
+}
+
+.step__description {
+    margin-left: 1.5rem;
+}
+
+.step__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.step__para {
+    margin-top: 12px;
+    max-width: 20rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 2;
+    color: rgb(113, 128, 150);
+}
+
+.step {
+    margin-top: 32px;
+    display: flex;
+}
+
+/* PLANS  */
+
+.pricing__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plans__container {
+    width: 100%;
+    margin-top: 64px;
+    display: flex;
+}
+
+.plan {
+border-radius: 8px;
+width: calc(100% / 3);
+border: 1px solid rgb(226, 232, 240);
+position: relative;
+margin: 16px;
+}
+
+.plan__line {
+    position: absolute;
+    height: 0.5rem;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.plan__header, .plan__body {
+    border-bottom: 2px solid rgb(226, 232, 240);
+}
+
+.plan__header, .plan__body, .plan__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.plan__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-top: 16px;
+}
+
+.plan__price {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 20px 0;
+
+}
+
+.plan__length {
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgb(160, 174, 192);
+}
+
+.plan__feature--main {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+}
+
+.plan__feature {
+    font-weight: 500;
+    color: rgb(113, 128, 150);
+    margin-top: 1.25rem;
+
+}
+
+.plan__btn {
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    border-radius: 9999px;
+    border: none;
+    color: white;
+    padding: 16px 64px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    transition: all 300ms ease;
+}
+
+.plan__line--red {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan__btn--red {
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.plan--blue {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    color: white;
+}
+
+.plan--blue .plan__feature, .plan--blue .plan__length {
+    color: white;
+}
+
+.plan__btn--blue {
+    background: white;
+    color: rgb(100 21 255);
+}
