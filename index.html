@@ -10,6 +10,7 @@
     src="https://kit.fontawesome.com/c8e4d183c2.js"
     crossorigin="anonymous"
   ></script>
+  <script src="index.js"></script>
 </head>
 <body>
  
@@ -22,15 +23,23 @@
             </div>
             <div class="navbar__links">
               <ul class="list">
-                <li>
-                  <a href class="nav__link"#">About</a>
-                </li>
+                <li><a href="#" class="nav__link">About</a></li>
                 <li><a href class="nav__link">Blog</a></li>
                 <li><a href class="nav__link">Pricing</a></li>
                 <li><a href class="nav__link">Contact Us</a></li>
                 <li><a href class="nav__link">Login</a></li>
                 <li><a href class="nav__link--primary">Sign Up</a></li>
               </ul>
+              <i class="fas fa-bars" onclick="openMenu()"></i>
+              <div class="menu__backdrop">
+                <a href="" class="backdrop__link" onclick="closeMenu()">About</a>
+                <a href="" class="backdrop__link" onclick="closeMenu()">Blog</a>
+                <a href="" class="backdrop__link" onclick="closeMenu()">Pricing</a>
+                <a href="" class="backdrop__link" onclick="closeMenu()">Contact Us</a>
+                <a href="" class="backdrop__link" onclick="closeMenu()">Login</a>
+                <a href="" class="backdrop__link backdrop__link--primary" onclick="closeMenu()">Sign Up</a>
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+              </div>
             </div>
             </nav>
           </div>
