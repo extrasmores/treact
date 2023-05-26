@@ -71,7 +71,7 @@ footer {
     line-height: 1;
 }
 
-.menu--open, .menu__backdrop {
+.menu--open {
     visibility: visible;
     opacity: 1;
 
