@@ -987,6 +987,7 @@ margin-bottom: 16px;
     .footer__copyright--para {
         margin: 24px 0;
     }
+}
 
     @media (max-width: 658px) {
 
@@ -1069,6 +1070,7 @@ margin-bottom: 16px;
             width: 100%;
             padding: 12px 32px;    
         }
+    }
 
         @media (max-width: 356px) {
 
@@ -1086,32 +1088,4 @@ margin-bottom: 16px;
                     padding: 8px 24px;    
                 }
             
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+            }  
